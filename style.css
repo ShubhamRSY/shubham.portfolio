@@ -1,0 +1,107 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-section {
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+p {
+    flex: 1;
+    margin: 0 20px;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-img-top {
+    width: 100%;
+    object-fit: cover; /* or change to 'cover' to make sure images cover the card area */
+    height: 200px; /* adjust the height as needed */
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.skill-card {
+    margin-bottom: 20px; /* Spacing between cards */
+}
+
+.skill-card img {
+    height: 200px; /* Fixed height for consistency */
+    object-fit: contain; /* Ensures the icons fit well without distortion */
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+.container {
+    padding: 40px 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) invert(1); /* White icons */
+}
