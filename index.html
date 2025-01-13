@@ -3,36 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubham Yedekar | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/About/favicon.png" type="image/png">
+    <title>Shubham Yedekar's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body { padding-top: 56px; scroll-behavior: smooth; }
+        .about-section, .projects-section, .skills-section, .contact-section { padding: 50px 0; }
+        .about-section h2, .projects-section h2, .skills-section h2, .contact-section h2 { font-size: 2.5rem; }
+        .navbar { box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        .card { box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .social-icon { width: 50px; margin-bottom: 10px; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Shubham Yedekar</h1>
-        <p>Data Scientist | Machine Learning Enthusiast</p>
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome! I am a Data Scientist with expertise in machine learning and predictive analytics...</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Name</h3>
-            <p>Description of the project...</p>
-            <a href="https://github.com/ShubhamRSY/project-name">View on GitHub</a>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#about">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:yedekarshubham7188@gmail.com">yedekarshubham7188@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/your-profile">linkedin.com/in/your-profile</a></p>
-    </section>
+    </div>
+</nav>
+
+<!-- About Section -->
+<section id="about" class="about-section text-center">
+    <div class="container">
+        <h2>Welcome to My Portfolio!</h2>
+        <p>Hello, I'm Shubham Yedekar, a passionate Data Scientist with experience in ETL validation, machine learning, and advanced analytics. I'm pursuing an MS in Data Science at the University of Connecticut and aim to leverage my skills to solve complex data challenges.</p>
+        <a href="Shubham_Yedekar_Resume.pdf" download class="btn btn-primary">Download My Resume</a>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="projects-section bg-light">
+    <div class="container">
+        <h2 class="text-center">Professional Experience</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Software Engineer - TALOS</h5>
+                        <p class="card-text">Automated testing workflows and built reusable frameworks, reducing manual efforts by 70% and enhancing testing efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Associate Software Engineer - JUMBO</h5>
+                        <p class="card-text">Designed ETL validation frameworks and processed 10GB+ datasets for QA accuracy, cutting errors by 30%.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2 class="text-center">Projects</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Multi-Modal Transportation Analytics</h5>
+                        <p class="card-text">Analyzed 3M+ NYC taxi and CitiBike records, optimizing systems with ML models achieving 97% accuracy.</p>
+                        <a href="https://github.com/ShubhamRSY" target="_blank" class="btn btn-secondary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Time Series Anomaly Detection</h5>
+                        <p class="card-text">Developed deep learning Autoencoders for detecting anomalies in 1M+ data points with high accuracy.</p>
+                        <a href="https://github.com/ShubhamRSY" target="_blank" class="btn btn-secondary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-light">
+    <div class="container">
+        <h2 class="text-center">Skills</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Python & SQL</h5>
+                        <p class="card-text">Proficient in data manipulation, analysis, and predictive modeling.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Machine Learning</h5>
+                        <p class="card-text">Experienced in supervised and unsupervised learning algorithms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section text-center bg-dark text-white">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <a href="mailto:yedekarshubham7188@gmail.com" class="btn btn-light">Email</a>
+        <a href="https://github.com/ShubhamRSY" class="btn btn-light">GitHub</a>
+        <a href="https://www.linkedin.com/in/shubham-yedekar/" class="btn btn-light">LinkedIn</a>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
