@@ -7,12 +7,18 @@
     <title>Shubham Yedekar's Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body { padding-top: 56px; scroll-behavior: smooth; }
-        .about-section, .projects-section, .skills-section, .contact-section { padding: 50px 0; }
-        .about-section h2, .projects-section h2, .skills-section h2, .contact-section h2 { font-size: 2.5rem; }
-        .navbar { box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
-        .card { box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .social-icon { width: 50px; margin-bottom: 10px; }
+        body {
+            padding-top: 56px;
+            scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .section { padding: 50px 0; }
+        .navbar { box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
+        .card { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+        .social-icon { width: 40px; margin: 10px; }
+        .text-center h2 { font-size: 2.5rem; margin-bottom: 30px; }
+        .btn-primary { background-color: #007bff; border: none; }
     </style>
 </head>
 <body>
@@ -36,32 +42,32 @@
 </nav>
 
 <!-- About Section -->
-<section id="about" class="about-section text-center">
+<section id="about" class="section text-center">
     <div class="container">
         <h2>Welcome to My Portfolio!</h2>
-        <p>Hello, I'm Shubham Yedekar, a passionate Data Scientist with experience in ETL validation, machine learning, and advanced analytics. I'm pursuing an MS in Data Science at the University of Connecticut and aim to leverage my skills to solve complex data challenges.</p>
+        <p>Hello, I'm Shubham Yedekar, a passionate Data Scientist with expertise in ETL validation, machine learning, and analytics. Pursuing an MS in Data Science at UConn, I aim to use my skills to tackle real-world problems and make data-driven impacts.</p>
         <a href="Shubham_Yedekar_Resume.pdf" download class="btn btn-primary">Download My Resume</a>
     </div>
 </section>
 
 <!-- Experience Section -->
-<section id="experience" class="projects-section bg-light">
+<section id="experience" class="section bg-light">
     <div class="container">
         <h2 class="text-center">Professional Experience</h2>
         <div class="row">
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Software Engineer - TALOS</h5>
-                        <p class="card-text">Automated testing workflows and built reusable frameworks, reducing manual efforts by 70% and enhancing testing efficiency.</p>
+                        <p>Engineered ETL validation frameworks processing 10GB+ datasets, achieving 30% QA precision improvement and automating workflows by 70%.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Associate Software Engineer - JUMBO</h5>
-                        <p class="card-text">Designed ETL validation frameworks and processed 10GB+ datasets for QA accuracy, cutting errors by 30%.</p>
+                        <p>Designed predictive models and streamlined ETL pipelines using PySpark, boosting pipeline efficiency by 40%.</p>
                     </div>
                 </div>
             </div>
@@ -70,25 +76,34 @@
 </section>
 
 <!-- Projects Section -->
-<section id="projects" class="projects-section">
+<section id="projects" class="section">
     <div class="container">
         <h2 class="text-center">Projects</h2>
         <div class="row">
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Multi-Modal Transportation Analytics</h5>
-                        <p class="card-text">Analyzed 3M+ NYC taxi and CitiBike records, optimizing systems with ML models achieving 97% accuracy.</p>
-                        <a href="https://github.com/ShubhamRSY" target="_blank" class="btn btn-secondary">GitHub</a>
+                        <p>Analyzed 3M+ NYC taxi and CitiBike records with ML models, achieving 97% accuracy to optimize transportation systems.</p>
+                        <a href="https://github.com/ShubhamRSY" class="btn btn-secondary" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Time Series Anomaly Detection</h5>
-                        <p class="card-text">Developed deep learning Autoencoders for detecting anomalies in 1M+ data points with high accuracy.</p>
-                        <a href="https://github.com/ShubhamRSY" target="_blank" class="btn btn-secondary">GitHub</a>
+                        <p>Built deep learning Autoencoders to detect anomalies in 1M+ time-series data points with high accuracy.</p>
+                        <a href="https://github.com/ShubhamRSY" class="btn btn-secondary" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Spam Classification</h5>
+                        <p>Developed a spam detection model with 97.3% accuracy using TF-IDF, Logistic Regression, and Naive Bayes.</p>
+                        <a href="https://github.com/ShubhamRSY" class="btn btn-secondary" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -97,7 +112,7 @@
 </section>
 
 <!-- Skills Section -->
-<section id="skills" class="skills-section bg-light">
+<section id="skills" class="section bg-light">
     <div class="container">
         <h2 class="text-center">Skills</h2>
         <div class="row">
@@ -105,7 +120,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Python & SQL</h5>
-                        <p class="card-text">Proficient in data manipulation, analysis, and predictive modeling.</p>
+                        <p>Proficient in data manipulation, ETL, and predictive modeling.</p>
                     </div>
                 </div>
             </div>
@@ -113,7 +128,15 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Machine Learning</h5>
-                        <p class="card-text">Experienced in supervised and unsupervised learning algorithms.</p>
+                        <p>Experience in supervised, unsupervised learning, and time series analysis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Generative AI</h5>
+                        <p>Expertise in NLP, Transformer-based models, and Autoencoders.</p>
                     </div>
                 </div>
             </div>
@@ -122,12 +145,12 @@
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="contact-section text-center bg-dark text-white">
+<section id="contact" class="section bg-dark text-white text-center">
     <div class="container">
         <h2>Contact Me</h2>
-        <a href="mailto:yedekarshubham7188@gmail.com" class="btn btn-light">Email</a>
-        <a href="https://github.com/ShubhamRSY" class="btn btn-light">GitHub</a>
-        <a href="https://www.linkedin.com/in/shubham-yedekar/" class="btn btn-light">LinkedIn</a>
+        <p>Email: <a href="mailto:yedekarshubham7188@gmail.com" class="text-white">yedekarshubham7188@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/ShubhamRSY" class="text-white" target="_blank">GitHub</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/shubham-yedekar/" class="text-white" target="_blank">LinkedIn</a></p>
     </div>
 </section>
 
