@@ -53,12 +53,12 @@
 </section>
 
 
+
 <!-- Experience Section -->
 <section id="experience" class="section bg-light">
     <div class="container">
         <h2 class="text-center">
             Professional Experience
-            <!-- Add larger Hexaware logo next to the heading -->
             <img src="images2/Professional experience/hexaware.png" alt="Hexaware Logo" style="width: 150px; height: auto; vertical-align: middle; margin-left: 10px;">
         </h2>
         <div class="row">
@@ -68,13 +68,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Software Engineer - TALOS</h5>
                         <p class="card-text">
-                            Engineered ETL validation frameworks processing 10GB+ datasets, achieving 30% QA precision improvement and automating workflows by 70%.<br>
-                            Implemented automated ETL pipelines in Python and SQL, standardizing the processing of large healthcare datasets and enhancing data integrity by 25%.<br>
-                            Developed anomaly detection models to identify abnormal patterns in claims data, reducing rework by 20% and improving system accuracy.<br>
-                            Conducted detailed analyses of structured and unstructured claims data, delivering actionable insights to optimize cost positioning and provider performance metrics.<br>
-                            Collaborated with cross-functional teams to design monitoring tools for tracking operational workflows, improving policy adherence and claims management processes.
+                            Engineered ETL validation frameworks processing 10GB+ datasets, achieving 30% QA precision improvement and automating workflows by 70%.
                         </p>
-                        <a href="#" class="btn btn-secondary">More Info</a>
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#talosModal">More Info</a>
                     </div>
                 </div>
             </div>
@@ -85,18 +81,85 @@
                     <div class="card-body">
                         <h5 class="card-title">Associate Software Engineer - JUMBO</h5>
                         <p class="card-text">
-                            Automated healthcare claims validation workflows using Python-based frameworks, reducing processing time by 50% and increasing scalability.<br>
-                            Built logistic regression models to improve system performance predictions, enhancing anomaly detection and increasing predictive accuracy by 15%.<br>
-                            Designed comprehensive data dictionaries and standardized reporting definitions, streamlining claims workflows and reducing delivery delays by 20%.<br>
-                            Developed a Tableau-based tracking tool to visualize claims and appeals KPIs, enabling stakeholders to monitor metrics in real-time and make data-driven decisions.
+                            Designed predictive models and streamlined ETL pipelines using PySpark, boosting pipeline efficiency by 40%.
                         </p>
-                        <a href="#" class="btn btn-secondary">More Info</a>
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#jumboModal">More Info</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Modal for TALOS -->
+<div class="modal fade" id="talosModal" tabindex="-1" role="dialog" aria-labelledby="talosModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="talosModalLabel">How to Perform 100% Validation in Big Data Testing and Cloud Migration Testing</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Testing</strong><br>February 3, 2023</p>
+                <p>Testing is an important aspect of any software development process and becomes even more crucial when it comes to big data and cloud migration. In these cases, the stakes are high, and any issues or errors can have serious consequences for the business. That is why performing thorough testing and validation is essential to ensure everything is working as expected.</p>
+                <p><strong>Data-Centric Testing & Cloud Migration Testing- An Overview</strong></p>
+                <p>Data-centric testing is software testing that focuses on the data being processed by a system. It involves verifying the data’s accuracy, integrity, and consistency as input, processed, and output by the system. This type of testing is essential in industries where the reliability of data is vital, such as finance, healthcare, and retail...</p>
+                <p><strong>Cloud Migration Testing</strong></p>
+                <p>On the other hand, cloud migration testing is the process of verifying that an application or system functions as expected before, during, and after it is migrated to a cloud environment...</p>
+                <p><strong>How to Enhance Data Test Validations with Quicker Turnaround Time</strong></p>
+                <p>Data test validations are an essential part of ensuring the quality and reliability of software. However, the testing process can often take a long time, which can be frustrating and slow down development. Speeding up data test validations can be achieved through a variety of strategies...</p>
+                <p><strong>Solution Recommendations from Hexaware</strong></p>
+                <p>At Hexaware, we understand the importance of achieving 100% data test validations even in Big Data and the need for quick turnaround times...</p>
+                <p><strong>JUMBO Features</strong></p>
+                <ul>
+                    <li>JUMBO supports ETL validation, reconciliations, business rules validation, data quality testing, and more</li>
+                    <li>It can compare large volumes of data quickly and has no license costs</li>
+                    <li>JUMBO significantly reduces manual effort and can be customized for specific queries</li>
+                    <li>It offers 100% data comparison, eliminating the need for random sampling</li>
+                    <li>JUMBO provides user-friendly match/mismatch reports and has a custom query option</li>
+                    <li>It maintains a repository of all previous executions for future analysis</li>
+                    <li>JUMBO also supports NoSQL databases</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for JUMBO -->
+<div class="modal fade" id="jumboModal" tabindex="-1" role="dialog" aria-labelledby="jumboModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="jumboModalLabel">Autonomous Testing and its Impact</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Testing</strong><br>July 29, 2022</p>
+                <p>With the ever-growing race toward a digital transformation, IT organizations are focusing more on the continuous evolution of their agile software development...</p>
+                <p><strong>What is Autonomous Testing?</strong></p>
+                <p>Autonomous Testing refers to creating the software tests autonomously, maintaining the tests, and analyzing the resulting output without needing the user to take any action...</p>
+                <p><strong>Transformation to Autonomous Testing</strong></p>
+                <p>Adopting and implementing autonomous Testing gradually moves from manual to semi-assisted and then to a fully automated testing mode...</p>
+                <p><strong>Autonomous Testing Benefits</strong></p>
+                <ul>
+                    <li>Faster test cycles</li>
+                    <li>Higher accuracy</li>
+                    <li>100% automation coverage</li>
+                    <li>Increased productivity and reliability</li>
+                </ul>
+                <p><strong>Hexaware's Approach</strong></p>
+                <p>Hexaware has carefully studied the entire software quality assurance lifecycle and identified several use cases that need human intervention and man-days to be completed...</p>
+                <p><strong>Conclusion</strong></p>
+                <p>Autonomous Testing leverages modern AI/ML techniques to automate the test case selection and significantly reduce the testing time...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 
