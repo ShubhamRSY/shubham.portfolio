@@ -396,16 +396,95 @@
 
 
 <!-- Contact Section -->
-<section id="contact" class="section bg-dark text-white text-center">
+<section id="contact" class="section bg-dark text-white text-center py-5">
     <div class="container">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:yedekarshubham7188@gmail.com" class="text-white">yedekarshubham7188@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/ShubhamRSY" class="text-white" target="_blank">GitHub</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/shubham-yedekar/" class="text-white" target="_blank">LinkedIn</a></p>
+        <h2 class="text-uppercase mb-4">Contact Me</h2>
+        <p class="lead mb-4">Feel free to reach out to me for any questions or collaboration opportunities!</p>
+        
+        <div class="row justify-content-center">
+            <!-- Email -->
+            <div class="col-md-4 mb-4">
+                <a href="mailto:yedekarshubham7188@gmail.com" class="text-white d-block">
+                    <div class="contact-icon bg-primary p-3 rounded-circle">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </div>
+                    <h4>Email</h4>
+                </a>
+            </div>
+            <!-- GitHub -->
+            <div class="col-md-4 mb-4">
+                <a href="https://github.com/ShubhamRSY" class="text-white d-block" target="_blank">
+                    <div class="contact-icon bg-dark p-3 rounded-circle">
+                        <i class="fab fa-github fa-2x"></i>
+                    </div>
+                    <h4>GitHub</h4>
+                </a>
+            </div>
+            <!-- LinkedIn -->
+            <div class="col-md-4 mb-4">
+                <a href="https://www.linkedin.com/in/shubham-yedekar/" class="text-white d-block" target="_blank">
+                    <div class="contact-icon bg-info p-3 rounded-circle">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </div>
+                    <h4>LinkedIn</h4>
+                </a>
+            </div>
+        </div>
+
+        <!-- Contact Form Section (optional) -->
+        <div class="contact-form mt-5">
+            <h3 class="text-white mb-4">Send Me a Message</h3>
+            <form action="#" method="POST">
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <textarea class="form-control" placeholder="Your Message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
     </div>
 </section>
 
+<!-- Contact Section Script -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+    .contact-icon {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .contact-icon:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .contact-form input, .contact-form textarea {
+        border-radius: 10px;
+        border: none;
+        padding: 15px;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .contact-form button {
+        background-color: #007bff;
+        border: none;
+        padding: 15px 30px;
+        color: white;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .contact-form button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
 </body>
 </html>
