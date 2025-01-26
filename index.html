@@ -223,6 +223,78 @@
     </div>
 </div>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/About/favicon.png" type="image/png">
+    <title>Shubham Yedekar's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 56px;
+            scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .section { padding: 50px 0; }
+        .navbar { box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
+        .card { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+        .social-icon { width: 40px; margin: 10px; }
+        .text-center h2 { font-size: 2.5rem; margin-bottom: 30px; }
+        .btn-primary { background-color: #007bff; border: none; }
+
+        /* Custom Styles for Project Cards */
+        .project-card {
+            width: 100%;
+            max-width: 300px; /* You can adjust this value as needed */
+            height: 350px;
+            overflow: auto;
+            margin: 20px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-body {
+            overflow-y: auto;
+            max-height: 150px;
+        }
+
+        .card-text {
+            font-size: 0.9rem;
+        }
+
+        .btn-secondary {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#about">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 <!-- Projects Section -->
 <section id="projects" class="section">
     <div class="container">
@@ -230,38 +302,40 @@
         <div class="row">
             <!-- NYC Taxis and Citi Bike Data Analysis Project -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card project-card">
                     <img src="images2/project_images/nyc taxi and bike.webp" class="card-img-top" alt="NYC Taxis and Citi Bike Data Analysis">
                     <div class="card-body">
                         <h5 class="card-title">🚖 NYC Taxis and Citi Bike Data Analysis Project 🚴‍♂️</h5>
                         <p class="card-text">
-                            A comprehensive analysis of NYC's taxi and bike systems, focusing on transportation demand, economic implications, and environmental insights.
+                            A comprehensive analysis of NYC's taxi and bike systems, focusing on transportation demand, economic implications, and environmental insights. This project provides in-depth insights into how these transportation systems affect local economies and the environment.
                         </p>
                         <a href="https://github.com/ShubhamRSY/NYC-Bike-Taxi-Data-Modeling-and-Visualization" class="btn btn-secondary" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
+
             <!-- Travelers Auto Insurance Claim Cost Prediction -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card project-card">
                     <img src="images2/project_images/travelers.png" class="card-img-top" alt="Travelers Auto Insurance Claim Cost Prediction">
                     <div class="card-body">
                         <h5 class="card-title">🚗 Travelers Auto Insurance Claim Cost Prediction</h5>
                         <p class="card-text">
-                            Developed a model to predict auto insurance claim costs, improving the accuracy and efficiency of the insurance company's rating plan.
+                            Developed a model to predict auto insurance claim costs, improving the accuracy and efficiency of the insurance company's rating plan. This model helps reduce underwriting errors and assists the company in better resource allocation.
                         </p>
                         <a href="https://github.com/ShubhamRSY/Travellers_competition" class="btn btn-secondary" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
+
             <!-- High School Scoring System Using TOPSIS and AHP -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card project-card">
                     <img src="images2/project_images/high school scoring system.webp" class="card-img-top" alt="High School Scoring System Using TOPSIS and AHP">
                     <div class="card-body">
                         <h5 class="card-title">🏫 High School Scoring System Using TOPSIS and AHP</h5>
                         <p class="card-text">
-                            A system to rank high schools for UConn admissions using TOPSIS and AHP, considering factors like yield rate, academic performance, and distance.
+                            A system to rank high schools for UConn admissions using TOPSIS and AHP, considering factors like yield rate, academic performance, and distance. This model helped optimize the admissions decision-making process.
                         </p>
                         <a href="https://github.com/ShubhamRSY/High-School-Scoring-System-Using-TOPSIS-and-AHP" class="btn btn-secondary" target="_blank">GitHub</a>
                     </div>
@@ -271,38 +345,40 @@
         <div class="row">
             <!-- Deep Learning using Iris Data Set -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card project-card">
                     <img src="images2/project_images/deep learning using iris dataset.webp" class="card-img-top" alt="Deep Learning using Iris Data Set">
                     <div class="card-body">
                         <h5 class="card-title">🌸 Deep Learning using Iris Data Set</h5>
                         <p class="card-text">
-                            Demonstrates classification model-building using Keras on the Iris flower dataset, achieving 93.3% test accuracy.
+                            Demonstrates classification model-building using Keras on the Iris flower dataset, achieving 93.3% test accuracy. This project helped in understanding the practical application of deep learning for classification tasks.
                         </p>
                         <a href="https://github.com/ShubhamRSY/Deep-Learning-using-iris-data-set" class="btn btn-secondary" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
+
             <!-- Titanic - Machine Learning from Disaster -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card project-card">
                     <img src="images2/project_images/Titanic-twi (1).png" class="card-img-top" alt="Titanic - Machine Learning from Disaster">
                     <div class="card-body">
                         <h5 class="card-title">🚢 Titanic - Machine Learning from Disaster</h5>
                         <p class="card-text">
-                            Predicts Titanic passenger survival based on demographics and socio-economic features using models like Perceptron and Linear Regression.
+                            Predicts Titanic passenger survival based on demographics and socio-economic features using models like Perceptron and Linear Regression. This project explores the application of ML techniques for binary classification.
                         </p>
                         <a href="https://github.com/ShubhamRSY/Titanic---Machine-Learning-from-Disaster" class="btn btn-secondary" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
+
             <!-- Incident Root Cause Analysis Exercise -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card project-card">
                     <img src="images2/project_images/root cause analysis.webp" class="card-img-top" alt="Incident Root Cause Analysis Exercise">
                     <div class="card-body">
                         <h5 class="card-title">⚠️ Incident Root Cause Analysis Exercise</h5>
                         <p class="card-text">
-                            Uses machine learning to identify root causes of IT incidents by analyzing CPU load, memory leaks, and delays, achieving 84.5% accuracy.
+                            Uses machine learning to identify root causes of IT incidents by analyzing CPU load, memory leaks, and delays, achieving 84.5% accuracy. This project uses predictive models for anomaly detection in IT environments.
                         </p>
                         <a href="https://github.com/ShubhamRSY/Incident-Root-Cause-Analysis" class="btn btn-secondary" target="_blank">GitHub</a>
                     </div>
@@ -312,62 +388,65 @@
         <div class="row">
             <!-- Anomaly Detection in Time Series Using an Autoencoder -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card project-card">
                     <img src="images2/project_images/anamoly detection.webp" class="card-img-top" alt="Anomaly Detection in Time Series Using an Autoencoder">
                     <div class="card-body">
                         <h5 class="card-title">🔍 Anomaly Detection in Time Series Using an Autoencoder</h5>
                         <p class="card-text">
-                            Implements an Autoencoder model for anomaly detection in time-series data to identify outliers in system health monitoring and fraud detection.
+                            Implements an Autoencoder model for anomaly detection in time-series data to identify outliers in system health monitoring and fraud detection. This project helps in identifying abnormal patterns in data streams.
                         </p>
                         <a href="https://github.com/ShubhamRSY/Anomaly-Detection-in-Time-Series-Using-an-Autoencoder" class="btn btn-secondary" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
+
             <!-- Heart Disease Analysis with T-Test -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card project-card">
                     <img src="images2/project_images/heart disease analysis.webp" class="card-img-top" alt="Heart Disease Analysis with T-Test">
                     <div class="card-body">
                         <h5 class="card-title">❤️ Heart Disease Analysis with T-Test</h5>
                         <p class="card-text">
-                            Conducts a statistical t-test on heart disease data to evaluate whether the maximum heart rate achieved differs significantly from the general average.
+                            Conducts a statistical t-test on heart disease data to evaluate whether the maximum heart rate achieved differs significantly from the general average. This analysis provides insights into patient health.
                         </p>
                         <a href="https://github.com/ShubhamRSY/Heart-Disease-Analysis-with-T-Test" class="btn btn-secondary" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
+
             <!-- Predictive Attendance Analysis for GoalZone Fitness Club -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card project-card">
                     <img src="images2/project_images/gold fitness club.webp" class="card-img-top" alt="Predictive Attendance Analysis for GoalZone Fitness Club">
                     <div class="card-body">
                         <h5 class="card-title">🏋️‍♂️ Predictive Attendance Analysis for GoalZone Fitness Club</h5>
                         <p class="card-text">
-                            A predictive model for optimizing fitness class availability, reducing booking underutilization, and improving member satisfaction at GoalZone.
+                            A predictive model for optimizing fitness class availability, reducing booking underutilization, and improving member satisfaction at GoalZone. This project highlights the power of data in resource management.
                         </p>
                         <a href="https://github.com/ShubhamRSY/Optimizing-fitness-Class-at-GoalZone-Fitness-Club-Canada" class="btn btn-secondary" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="row">
             <!-- Spam Classification using Deep Learning -->
-<div class="col-md-4 col-sm-6 mb-4">
-    <div class="card">
-        <img src="images2/project_images/spam message classification.webp" class="card-img-top" alt="Spam Classification using Deep Learning">
-        <div class="card-body">
-            <h5 class="card-title">📬 Spam Classification using Deep Learning</h5>
-            <p class="card-text">
-                A pipeline to classify spam messages using deep learning models like Logistic Regression, Naive Bayes, and SVM, with an accuracy of 97.3%.
-            </p>
-            <a href="https://github.com/ShubhamRSY/spam-classification-using-deep-learning" class="btn btn-secondary" target="_blank">GitHub</a>
-        </div>
-    </div>
-</div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card project-card">
+                    <img src="images2/project_images/spam message classification.webp" class="card-img-top" alt="Spam Classification using Deep Learning">
+                    <div class="card-body">
+                        <h5 class="card-title">📬 Spam Classification using Deep Learning</h5>
+                        <p class="card-text">
+                            A pipeline to classify spam messages using deep learning models like Logistic Regression, Naive Bayes, and SVM, with an accuracy of 97.3%.
+                        </p>
+                        <a href="https://github.com/ShubhamRSY/spam-classification-using-deep-learning" class="btn btn-secondary" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
 
             <!-- Basic Statistical Analysis in Healthcare -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card project-card">
                     <img src="images2/project_images/health stat analysis.webp" class="card-img-top" alt="Basic Statistical Analysis in Healthcare">
                     <div class="card-body">
                         <h5 class="card-title">🔬 Basic Statistical Analysis in Healthcare</h5>
@@ -378,9 +457,10 @@
                     </div>
                 </div>
             </div>
+
             <!-- Tableau Cricket Analysis Dashboard -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card project-card">
                     <img src="images2/project_images/cricket anlysis.webp" class="card-img-top" alt="Tableau Cricket Analysis Dashboard">
                     <div class="card-body">
                         <h5 class="card-title">🏏 Tableau Cricket Analysis Dashboard</h5>
@@ -391,23 +471,24 @@
                     </div>
                 </div>
             </div>
+
             <!-- Predictions-Regression-for-Car-Mileage-and-Diamond-Price Project -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card project-card">
                     <img src="images2/project_images/car mileage and diamond price.webp" class="card-img-top" alt="Predictions-Regression for Car Mileage and Diamond Price">
                     <div class="card-body">
                         <h5 class="card-title">🚗 Predictions-Regression for Car Mileage and 💎 Diamond Price</h5>
                         <p class="card-text">
-                            This project involves building predictive models to estimate car mileage and diamond prices using regression techniques. 
-                            The dataset includes various features like car specifications for predicting mileage and diamond characteristics (such as carat, cut, color, and clarity) for predicting price.
+                            This project involves building predictive models to estimate car mileage and diamond prices using regression techniques. The dataset includes various features like car specifications for predicting mileage and diamond characteristics (such as carat, cut, color, and clarity) for predicting price.
                         </p>
                         <a href="https://github.com/ShubhamRSY/Predictions-Regression-for-Car-Mileage-and-Diamond-Price" class="btn btn-secondary" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
+
             <!-- Global Cost of Living Analysis -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card project-card">
                     <img src="images2/project_images/global cost analysis.webp" class="card-img-top" alt="Global Cost of Living Analysis">
                     <div class="card-body">
                         <h5 class="card-title">🌍 Global Cost of Living Analysis</h5>
@@ -422,6 +503,13 @@
     </div>
 </section>
 
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
 
 
 <!-- Skills Section -->
