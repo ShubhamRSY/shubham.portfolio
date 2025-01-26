@@ -241,37 +241,65 @@
         .section { padding: 50px 0; }
         .navbar { box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
         .card { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
-        .social-icon { width: 40px; margin: 10px; }
         .text-center h2 { font-size: 2.5rem; margin-bottom: 30px; }
         .btn-primary { background-color: #007bff; border: none; }
 
         /* Custom Styles for Project Cards */
         .project-card {
             width: 100%;
-            max-width: 300px; /* You can adjust this value as needed */
-            height: 400px; /* Ensuring consistent height */
-            margin: 20px auto;
+            height: 400px; /* Fixed height */
+            margin: 20px 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .card-img-top {
             width: 100%;
-            height: auto;
+            height: 200px; /* Fixed height for images */
+            object-fit: cover;
         }
 
         .card-body {
-            height: 220px; /* Fixed height for card body */
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .card-text {
             font-size: 0.9rem;
-            height: 90px; /* Ensure the text is visible */
-            overflow: hidden; /* Truncate text if it overflows */
+            overflow: hidden; /* To prevent text overflow */
+            height: 70px; /* Ensure it fits well */
         }
 
         .btn-secondary {
             width: 100%;
+        }
+
+        /* Layout for Projects */
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .col-md-4 {
+            flex: 0 1 calc(33.33% - 20px);
+        }
+
+        @media (max-width: 768px) {
+            .col-md-4 {
+                flex: 0 1 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .col-md-4 {
+                flex: 0 1 100%;
+            }
         }
     </style>
 </head>
