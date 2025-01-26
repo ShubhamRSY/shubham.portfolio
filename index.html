@@ -222,7 +222,7 @@
         </div>
     </div>
 </div>
-
+<!-- seperation -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -249,8 +249,7 @@
         .project-card {
             width: 100%;
             max-width: 300px; /* You can adjust this value as needed */
-            height: 350px;
-            overflow: auto;
+            height: 400px; /* Ensuring consistent height */
             margin: 20px auto;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 10px;
@@ -262,12 +261,13 @@
         }
 
         .card-body {
-            overflow-y: auto;
-            max-height: 150px;
+            height: 220px; /* Fixed height for card body */
         }
 
         .card-text {
             font-size: 0.9rem;
+            height: 90px; /* Ensure the text is visible */
+            overflow: hidden; /* Truncate text if it overflows */
         }
 
         .btn-secondary {
@@ -502,6 +502,14 @@
         </div>
     </div>
 </section>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
 
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
