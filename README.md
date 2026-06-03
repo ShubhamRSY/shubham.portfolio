@@ -25,8 +25,12 @@
 
 ## 🏗 Featured Architectures
 <div align="center">
-  <a href="https://github.com/ShubhamRSY/Agentic-Analytics"><img src="https://github-readme-card.vercel.app/api?username=ShubhamRSY&repo=Agentic-Analytics&theme=tokyonight&hide_border=true" width="49%" /></a>
-  <a href="https://github.com/ShubhamRSY/SmartPantryV2"><img src="https://github-readme-card.vercel.app/api?username=ShubhamRSY&repo=SmartPantryV2&theme=tokyonight&hide_border=true" width="49%" /></a>
+  <a href="https://github.com/ShubhamRSY/shubham.portfolio">
+    <img src="https://github-readme-card.vercel.app/api?username=ShubhamRSY&repo=shubham.portfolio&theme=tokyonight&hide_border=true" width="49%" />
+  </a>
+  <a href="https://github.com/ShubhamRSY/Agentic-Analytics">
+    <img src="https://github-readme-card.vercel.app/api?username=ShubhamRSY&repo=Agentic-Analytics&theme=tokyonight&hide_border=true" width="49%" />
+  </a>
 </div>
 
 ---
